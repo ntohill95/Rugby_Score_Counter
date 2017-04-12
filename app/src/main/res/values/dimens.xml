@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="score">25sp</dimen>
+    <dimen name="scorepad">8dp</dimen>
+    <dimen name="team">40sp</dimen>
+    <dimen name="totScore">50sp</dimen>
+    <dimen name="reset">25sp</dimen>
+</resources>

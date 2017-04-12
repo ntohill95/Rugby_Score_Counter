@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context="com.example.android.rugby.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/kick"
+            android:textSize="@dimen/score"
+            android:textAppearance="@style/ScoreStyle"
+            android:layout_gravity="center_horizontal"
+            android:padding="@dimen/scorepad"
+            android:rotation="180"
+            android:layout_marginTop="20dp"
+            android:onClick="kick"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/con"
+            android:textSize="@dimen/score"
+            android:textAppearance="@style/ScoreStyle"
+            android:layout_gravity="center_horizontal"
+            android:padding="@dimen/scorepad"
+            android:rotation="180"
+            android:onClick="con"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Try"
+            android:textSize="@dimen/score"
+            android:textAppearance="@style/ScoreStyle"
+            android:layout_gravity="center_horizontal"
+            android:padding="@dimen/scorepad"
+            android:rotation="180"
+            android:onClick="atry"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/teama"
+            android:textAppearance="@style/TeamStyle"
+            android:textSize="@dimen/team"
+            android:layout_gravity="center_horizontal"
+            android:rotation="180"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/team_a_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginBottom="@dimen/scorepad"
+                android:rotation="180"
+                android:text="@string/scoreA"
+                android:textAppearance="@style/ScoreStyle"
+                android:layout_marginStart="40dp"
+                android:textSize="@dimen/totScore" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/scorepad"
+                android:rotation="180"
+                android:text="@string/space"
+                android:textAppearance="@style/ScoreStyle"
+                android:textSize="@dimen/totScore" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/scorepad"
+                android:rotation="180"
+                android:text="@string/A"
+                android:textAppearance="@style/ScoreStyle"
+                android:textSize="@dimen/totScore" />
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginBottom="@dimen/scorepad"
+                android:text="@string/B"
+                android:textAppearance="@style/ScoreStyle"
+                android:textSize="@dimen/totScore" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginBottom="@dimen/scorepad"
+                android:text="@string/space"
+                android:textAppearance="@style/ScoreStyle"
+                android:textSize="@dimen/totScore" />
+
+            <TextView
+                android:id="@+id/team_b_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginBottom="@dimen/scorepad"
+                android:text="@string/scoreB"
+                android:layout_marginEnd="40dp"
+                android:textAppearance="@style/ScoreStyle"
+                android:textSize="@dimen/totScore" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/teamb"
+            android:textAppearance="@style/TeamStyle"
+            android:textSize="@dimen/team"
+            android:layout_gravity="center_horizontal"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Try"
+            android:textSize="@dimen/score"
+            android:textAppearance="@style/ScoreStyle"
+            android:layout_gravity="center_horizontal"
+            android:padding="@dimen/scorepad"
+            android:onClick="atryb"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/con"
+            android:textSize="@dimen/score"
+            android:textAppearance="@style/ScoreStyle"
+            android:layout_gravity="center_horizontal"
+            android:padding="@dimen/scorepad"
+            android:onClick="conb"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/kick"
+            android:textSize="@dimen/score"
+            android:textAppearance="@style/ScoreStyle"
+            android:layout_gravity="center_horizontal"
+            android:padding="@dimen/scorepad"
+            android:onClick="kickb"/>
+        <Button
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="resetButton"
+            android:text="@string/reset" />
+    </LinearLayout>
+
+
+</ScrollView>
